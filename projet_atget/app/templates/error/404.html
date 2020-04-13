@@ -1,0 +1,8 @@
+{% extends 'layouts/default.html' %}
+{%block body%}
+<h5 style="color: red ; font-weight: bold;">Error 404</h5>
+<h1>Vous cherchez votre chemin dans Paris?</h1> 
+<h1>Oubliez GoogleMaps et laissez vous plutôt guider par Atget...</h1>
+<br/>
+<a href="{{url_for('accueil')}}"><div class="img_error"><img src="static/img/img_error.png" alt="pellicule PNG"></div></a>
+{%endblock body%}

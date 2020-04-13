@@ -1,0 +1,18 @@
+{% extends 'containeur.html'%}
+{%block contenu%}
+
+<!--Cette page affiche la page d'à propos-->
+
+<h1>A propos</h1>
+
+<div class="propos"><p>L'application "Atget photographie Paris" est réalisée dans le cadre du cours dispensé par Thibault Clérice au Master 2 <a href="http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire" target="_blank">Technologies Numériques Appliquées à l'Histoire</a> à <a href="http://www.chartes.psl.eu/fr" target="_blank"> l'Ecole nationale des Chartes.</a></p>
+<p>L'exercice consiste en la réalisation d'une API en se basant sur le langage de programmation <a href="https://www.python.org/" target="_blank"> Python 3.x</a>, le micro-framework <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank"> Flask</a> et les langages HTML et CSS. Les éléments qui composent l'habillage du site (carousel, <em>cards</em> pour affichage des images, etc) proviennent du framework <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>. La base de données est réalisée à partir de SQLlite et est géré par Python grâce à l'ORM SQLAlchemy afin de permettre l'utilisation de la fonction <em>Recherche</em> dans le corpus.</p> 
+<p>Le choix a été fait de mettre en place une base de données simple rassemblant un échantillon des photographies de Paris réalisées par Eugène Atget entre 1890 et 1924. Le corpus présenté est restreint pour les besoins de l'exercice. Cette application présente donc une courte biographie du photographe, une galerie, organisée dans l'esprit des magasins de photographies de ce siècle, où toutes les images étaient accrochées en quinconce et de façon assez rapprochées. Un moteur de recherche permet d'accéder aux visuels grâce à des requêtes constituées de mots-clefs, du titre de la photographie, de l'année de prise de vue ou de son emplacement géographique. Une notice accompagne chaque photo, en rassemblant ses éléments descriptifs.</p>
+<p>Dans l'idée de réaliser un projet complet sur le long terme, il serait envisageable d'instaurer un système de comptes utilisateurs. Ceux qui le souhaitent pourraient obtenir un identifiant leur permettant un accès à un espace personel. Ils pourraient alors ajouter de nouvelles photographies à la base, les indexer en suivant un cadre précis établi au préalable par le concepteur de l'API et échanger avec les autres utilisateurs via un forum. Ainsi les simples visiteurs pourraient avoir accès à la collection en consultation tandis que les contributeurs permettraient de faire vivre la base, en l'alimentant et en l'animant.</p>
+
+<p>Je tiens à remercier <a href="https://github.com/PonteIneptique" target="_blank">Thibault Clérice</a>, Vincent Jolivet et <a href="https://github.com/MrGecko" target="_blank">Julien Pilla</a> pour leur aide et leurs conseils. 
+<br/>Des remerciements tous particuliers à l'équipe des Beatles "du fond de la salle", pour leur soutien et leur amitié sans faille tout au long de ces deux années : <a href="https://github.com/annehbrunet" target="_blank">John Lennon</a>, <a href="https://github.com/Lucaterre" target="_blank">Paul McCartney</a>, <a href="https://github.com/jeandamien-genero" target="_blank">Ringo Starr</a>. <br/>
+<a href="https://github.com/Sarabi34" target="_blank">George Harrison</a>.
+</div>
+<!--le target="_blank" permettent d'ouvrir le lien dans un nouvel onglet lorsque l'utilisateur clique dessus-->
+{%endblock contenu%}
