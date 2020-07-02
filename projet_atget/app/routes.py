@@ -34,12 +34,12 @@ def galerie():
 #page de la biographie d'Atget
 @app.route("/Biographie")
 def biographie():
-		return render_template("pages/biographie.html") 
+    return render_template("pages/biographie.html")
 
 #page à propos
 @app.route("/A_propos")
 def a_propos():
-		return render_template("pages/a_propos.html")
+    return render_template("pages/a_propos.html")
 
 # Définition de la route vers chaque image grâce à leur identifiant (int)
 @app.route("/Imgs/<int:id>")
@@ -51,7 +51,7 @@ def img(id):
 @app.route("/recherche")
 def recherche():
     motclef = request.args.get("keyword", None)
-    page = request.args.get("page",1)
+    page = request.args.get("page", 1)
 
     if isinstance(page, str) and page.isdigit():
         page = int(page)
